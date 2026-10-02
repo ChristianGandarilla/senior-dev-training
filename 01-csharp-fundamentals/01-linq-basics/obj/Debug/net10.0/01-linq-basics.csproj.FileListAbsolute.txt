@@ -1,0 +1,14 @@
+C:\dev\personal\senior-dev-training\01-csharp-fundamentals\01-linq-basics\bin\Debug\net10.0\01-linq-basics.exe
+C:\dev\personal\senior-dev-training\01-csharp-fundamentals\01-linq-basics\bin\Debug\net10.0\01-linq-basics.deps.json
+C:\dev\personal\senior-dev-training\01-csharp-fundamentals\01-linq-basics\bin\Debug\net10.0\01-linq-basics.runtimeconfig.json
+C:\dev\personal\senior-dev-training\01-csharp-fundamentals\01-linq-basics\bin\Debug\net10.0\01-linq-basics.dll
+C:\dev\personal\senior-dev-training\01-csharp-fundamentals\01-linq-basics\bin\Debug\net10.0\01-linq-basics.pdb
+C:\dev\personal\senior-dev-training\01-csharp-fundamentals\01-linq-basics\obj\Debug\net10.0\01-linq-basics.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\personal\senior-dev-training\01-csharp-fundamentals\01-linq-basics\obj\Debug\net10.0\01-linq-basics.AssemblyInfoInputs.cache
+C:\dev\personal\senior-dev-training\01-csharp-fundamentals\01-linq-basics\obj\Debug\net10.0\01-linq-basics.AssemblyInfo.cs
+C:\dev\personal\senior-dev-training\01-csharp-fundamentals\01-linq-basics\obj\Debug\net10.0\01-linq-basics.csproj.CoreCompileInputs.cache
+C:\dev\personal\senior-dev-training\01-csharp-fundamentals\01-linq-basics\obj\Debug\net10.0\01-linq-basics.dll
+C:\dev\personal\senior-dev-training\01-csharp-fundamentals\01-linq-basics\obj\Debug\net10.0\refint\01-linq-basics.dll
+C:\dev\personal\senior-dev-training\01-csharp-fundamentals\01-linq-basics\obj\Debug\net10.0\01-linq-basics.pdb
+C:\dev\personal\senior-dev-training\01-csharp-fundamentals\01-linq-basics\obj\Debug\net10.0\01-linq-basics.genruntimeconfig.cache
+C:\dev\personal\senior-dev-training\01-csharp-fundamentals\01-linq-basics\obj\Debug\net10.0\ref\01-linq-basics.dll
