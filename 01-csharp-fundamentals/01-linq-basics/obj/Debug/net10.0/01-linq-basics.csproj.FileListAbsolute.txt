@@ -12,3 +12,4 @@ C:\dev\personal\senior-dev-training\01-csharp-fundamentals\01-linq-basics\obj\De
 C:\dev\personal\senior-dev-training\01-csharp-fundamentals\01-linq-basics\obj\Debug\net10.0\01-linq-basics.pdb
 C:\dev\personal\senior-dev-training\01-csharp-fundamentals\01-linq-basics\obj\Debug\net10.0\01-linq-basics.genruntimeconfig.cache
 C:\dev\personal\senior-dev-training\01-csharp-fundamentals\01-linq-basics\obj\Debug\net10.0\ref\01-linq-basics.dll
+C:\dev\personal\senior-dev-training\01-csharp-fundamentals\01-linq-basics\obj\Debug\net10.0\01-linq-basics.sourcelink.json
