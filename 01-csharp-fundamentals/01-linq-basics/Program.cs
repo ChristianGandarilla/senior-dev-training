@@ -5,8 +5,8 @@ var users = new List<User>
     new User { Name = "Christian", Age = 35, IsActive = true },
     new User { Name = "Andrea", Age = 29, IsActive = true },
     new User { Name = "Miguel", Age = 40, IsActive = false },
-    new User { Name = "Carlos", Age = 25, IsActive = true }
-    // new User { Name = "Christian", Age = 40, IsActive = true }
+    new User { Name = "Carlos", Age = 25, IsActive = true },
+    new User { Name = "Fernando", Age = 40, IsActive = true }
 };
 
 /* Ejercicio 1: Obtener los nombres de los usuarios activos ordenados alfabéticamente
@@ -79,11 +79,39 @@ var result = users
         Console.WriteLine("No user found.");
     }
 */
-
+/* Ejercicio 8: Obtener el total y promedio de edad de todos los usuarios
 var totalAge = users.Sum(u => u.Age);
 var averageAge = users.Average(u => u.Age);
-Console.WriteLine($"Total age of all users: {totalAge}");
-Console.WriteLine($"Average age of all users: {averageAge}");
+Console.WriteLine($"Total age of all users: {totalAge} - Type: {totalAge.GetType()}");
+Console.WriteLine($"Average age of all users: {averageAge} - Type: {averageAge.GetType()}");
+
+var activeUsers = users.Count(u => u.IsActive);
+var averageActiveAge = users.Where(u => u.IsActive).Average(u => u.Age);
+Console.WriteLine($"Total active users: {activeUsers}");
+Console.WriteLine($"Average age of active users: {averageActiveAge:F2}");
+
+var result = users
+    .Where(u => u.Age >= 35 && u.IsActive)
+    .Select(u => new { u.Name, u.Age })
+    .OrderByDescending(u => u.Age);
+
+foreach (var user in result)
+{
+    Console.WriteLine($"{user.Name} - {user.Age}");
+}
+*/
+
+/* Ejercicio 9: Obtener los nombres de los usuarios activos con la edad mayor o igual que 25, ordenados alfabeticamente.
+*/
+var result = users
+    .Where(u => u.IsActive && u.Age >= 25)
+    .OrderBy(u => u.Name)
+    .Select(u => u.Name);
+
+foreach (var name in result)
+{
+    Console.WriteLine(name);
+}
 
 public class User
 {
