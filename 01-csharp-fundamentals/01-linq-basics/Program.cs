@@ -128,7 +128,6 @@ users.Add(new User
 
 Console.WriteLine($"Users after adding Fernando: {users.Count}");
 Console.WriteLine($"Result after adding Fernando: {result.Count}");
-*/
 
 var activeUsers = users
     .Where(u => u.IsActive);
@@ -146,6 +145,37 @@ users.Add(new User
 
 Console.WriteLine(activeUsers.Count());
 Console.WriteLine(activeUsersList.Count());
+*/
+/* Ejercicio 11: Diferencias entre IEnumerable y List
+var result = users
+    .Where(u => u.IsActive);
+
+Console.WriteLine(result.GetType());
+
+IEnumerable<User> result = users
+    .Where(u => u.IsActive);
+
+Console.WriteLine(result.GetType());
+
+List<User> result = users
+    .Where(u => u.IsActive)
+    .ToList();
+
+Console.WriteLine(result.GetType());
+
+var a = users.Where(u => u.IsActive);
+IEnumerable<User> b = users.Where(u => u.IsActive);
+List<User> c = users.Where(u => u.IsActive).ToList();
+
+Console.WriteLine(a.GetType());
+Console.WriteLine(b.GetType());
+Console.WriteLine(c.GetType());
+
+var activeUsers = db.Users
+    .Where(u => u.IsActive)
+    .OrderBy(u => u.Name)
+    .ToList();
+*/
 
 public class User
 {
