@@ -6,7 +6,7 @@ var users = new List<User>
     new User { Name = "Andrea", Age = 29, IsActive = true },
     new User { Name = "Miguel", Age = 40, IsActive = false },
     new User { Name = "Carlos", Age = 25, IsActive = true },
-    new User { Name = "Fernando", Age = 40, IsActive = true }
+    // new User { Name = "Fernando", Age = 40, IsActive = true }
 };
 
 /* Ejercicio 1: Obtener los nombres de los usuarios activos ordenados alfabéticamente
@@ -100,9 +100,7 @@ foreach (var user in result)
     Console.WriteLine($"{user.Name} - {user.Age}");
 }
 */
-
 /* Ejercicio 9: Obtener los nombres de los usuarios activos con la edad mayor o igual que 25, ordenados alfabeticamente.
-*/
 var result = users
     .Where(u => u.IsActive && u.Age >= 25)
     .OrderBy(u => u.Name)
@@ -112,6 +110,42 @@ foreach (var name in result)
 {
     Console.WriteLine(name);
 }
+*/
+/* Ejercicio 10
+var result = users
+    .Where(u => u.IsActive)
+    .ToList();
+
+Console.WriteLine($"Users: {users.Count}");
+Console.WriteLine($"Result: {result.Count}");
+
+users.Add(new User
+{
+    Name = "Fernando",
+    Age = 28,
+    IsActive = true
+});
+
+Console.WriteLine($"Users after adding Fernando: {users.Count}");
+Console.WriteLine($"Result after adding Fernando: {result.Count}");
+*/
+
+var activeUsers = users
+    .Where(u => u.IsActive);
+
+var activeUsersList = users
+    .Where(u => u.IsActive)
+    .ToList();
+
+users.Add(new User
+{
+    Name = "Fernando",
+    Age = 28,
+    IsActive = true
+});
+
+Console.WriteLine(activeUsers.Count());
+Console.WriteLine(activeUsersList.Count());
 
 public class User
 {
